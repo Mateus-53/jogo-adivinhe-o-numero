@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #dae5d0;
+  --card-color: #fefbe7;
+  --text-color: #000;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--bg-color);
+}
+
+.container * {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.container {
+  color: var(--text-color);
+  padding: 30px;
+  width: 400px;
+  border-radius: 10px;
+  background: var(--card-color);
+  transition: all 0.2s ease-in-out;
+  box-shadow: -20px 20px 82px #b2b0a2, 20px -20px 82px #ffffff;
+}
+
+.container h1 {
+  font-family: "Bungee", sans-serif;
+  line-height: 35px;
+  font-size: 30px;
+}
+
+.form * {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form input[type="number"] {
+  width: 100%;
+  background: transparent;
+  border-radius: 5px;
+  padding: 10px 0;
+  border: 1px solid #000;
+  transition: 0.2s ease-in-out;
+  outline: none;
+}
+
+.form input[type="number"]:focus {
+  padding: 15px 0;
+  border: 2px solid #000;
+}
+
+.form input[type="submit"] {
+  background: transparent;
+  text-align: center;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #000;
+  padding: 10px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.form input[type="submit"]:not(:disabled):hover,
+.form input[type="submit"]:not(:disabled):focus,
+.resultadoParas button:hover,
+.resultadoParas button:focus {
+  box-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000;
+  -moz-transform: translateX(-3px);
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+}
+
+.ultimoResultado {
+  text-align: center;
+  padding: 10px;
+}
+
+.resultadoParas button {
+  display: none;
+  margin: 10px auto;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #000;
+  padding: 10px;
+  transition: 0.2s ease-in-out;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+@media (max-width: 450px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+}

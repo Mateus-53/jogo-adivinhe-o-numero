@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/script.js" defer></script>
+    <title>Jogo Adivinhe O Número</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>
+        Jogo Adivinhe O Número <span class="emojiReaction">&#x1F914;</span>
+      </h1>
+      <p>
+        Selecionamos um número aleatório entre 1 e 100. Veja se consegue
+        adivinhar em 10 chances ou menos. Nós lhe diremos se seu palpite está
+        com valor alto ou baixo.
+      </p>
+      <div class="form">
+        <label for="campoPalpite"> Digite seu palpite: </label>
+        <input
+          type="number"
+          min="1"
+          max="100"
+          required
+          id="campoPalpite"
+          class="campoPalpite"
+        />
+        <input type="submit" value="Enviar palpite" class="envioPalpite" />
+      </div>
+      <div class="resultadoParas">
+        <p class="palpites"></p>
+        <p class="ultimoResultado"></p>
+        <p class="baixoOuAlto"></p>
+        <button class="reiniciarJogo">Reiniciar jogo</button>
+      </div>
+    </div>
+  </body>
+</html>
